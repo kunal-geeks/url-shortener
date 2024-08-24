@@ -40,7 +40,7 @@ This project provides a URL shortener service that allows users to shorten URLs,
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/url-shortener.git
+   git clone https://github.com/kunal-geeks/url-shortener.git
    cd url-shortener
 
 2. **Install Dependencies**
