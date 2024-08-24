@@ -1,10 +1,17 @@
 const Queue = require('bull');
+const logger = require('../utils/logger');
+const processVisitData = require('../utils/analyticsHelper');
+
 const visitQueue = new Queue('visitQueue', process.env.REDIS_URL);
 
 visitQueue.process(async (job) => {
-  const { shortCode, visitData } = job.data;
-  // Process visit data (e.g., aggregate analytics)
-  console.log(`Processing visit for ${shortCode}:`, visitData);
+  try {
+    const { shortCode, visitData } = job.data;
+    await processVisitData(shortCode, visitData);
+    logger.info(`Processed visit for ${shortCode}`);
+  } catch (err) {
+    logger.error(`Failed to process visit for ${shortCode}: ${err.message}`);
+  }
 });
 
 module.exports = visitQueue;
