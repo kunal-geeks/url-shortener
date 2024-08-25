@@ -82,7 +82,6 @@ Description: Shorten a long URL and optionally set a custom short code and expir
 Request Body:
 
 json
-Copy code
 {
   "originalUrl": "https://example.com",
   "customCode": "example123",
@@ -91,7 +90,6 @@ Copy code
 Response:
 
 json
-Copy code
 {
   "shortCode": "example123"
 }
@@ -110,7 +108,6 @@ Description: Retrieve analytics data for a shortened URL.
 Response:
 
 json
-Copy code
 {
   "totalVisits": 123,
   "uniqueVisitors": 45,
@@ -133,24 +130,18 @@ Unit Tests
 ```bash
 Run unit tests with Jest:
 
-bash
-Copy code
+```bash
 npm test
 Postman Collection
-
+```
 Import the provided Postman collection to test the API endpoints. Postman Collection
 
-Contributing
+**Contributing**
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. Make sure to follow the coding style and include tests for new features.
 
-License
+**License**
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-csharp
-Copy code
-
-Replace the placeholders such as `https://github.com/your-username/url-shortener.git` with the actual repository URL and adjust paths as needed. This `README.md` provides a comprehensive guide to setting up, running, and testing your URL shortener application.
-```
 
 
 
