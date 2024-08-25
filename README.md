@@ -132,8 +132,8 @@ Run unit tests with Jest:
 
 ```bash
 npm test
-Postman Collection
 ```
+**Postman Collection**
 Import the provided Postman collection to test the API endpoints. Postman Collection
 
 **Contributing**
