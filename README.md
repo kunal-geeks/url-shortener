@@ -46,7 +46,6 @@ This project provides a URL shortener service that allows users to shorten URLs,
 2. **Install Dependencies**
 
 ```bash
-Copy code
 npm install
 Run Docker Containers
 ```
@@ -54,7 +53,6 @@ Run Docker Containers
 3. **Start Redis and the application using Docker Compose:**
 
 ```bash
-Copy code
 docker-compose up
 ```
 
@@ -65,7 +63,6 @@ This command will start the Redis and application containers. Redis will be acce
 Ensure you have a .env file in the root directory with the following variables:
 
 ```env
-Copy code
 PORT=5000
 REDIS_URL=redis://redis:6379
 MONGO_URI=mongodb://mongo:27017/url-shortener
