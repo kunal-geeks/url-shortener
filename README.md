@@ -126,10 +126,9 @@ json
 }
 ```
 **Testing**
-Unit Tests
-```bash
-Run unit tests with Jest:
+- Unit Tests
 
+- Run unit tests with Jest:
 ```bash
 npm test
 ```
